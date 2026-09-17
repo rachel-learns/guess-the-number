@@ -16,9 +16,9 @@ public class Main {
             // The rules
             System.out.println("Welcome in Guess The Number!");
             System.out.println("The rules are simple : give me a number between 0 and 100, " +
-                    "and i tell you if this is the right number." +
-                    "\nIf it is not, you try again." +
-                    "\nIt it is, you won!");
+                    "and i tell you if this is the right number.");
+            System.out.println("If it is not, you try again.");
+            System.out.println("It it is, you won!");
             System.out.println("Your time to play!");
             System.out.println();
 
@@ -68,7 +68,7 @@ public class Main {
             }
 
             // Print the score of this game
-            int score = 0;
+            int score;
             if(nbrEssais == 5) {
                 score = 10;
             } else {
@@ -82,7 +82,7 @@ public class Main {
 
             // Ask the user if he wants to keep playing
             System.out.println("Do you want to continue playing? (y/n) There is " + gameMax + " games left.");
-            String c = "";
+            String c;
             do {
                 Scanner scanner = new Scanner(System.in);
                 c = scanner.next();
