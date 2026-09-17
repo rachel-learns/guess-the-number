@@ -7,11 +7,10 @@ public class Main {
     public static void main(String[] args) {
         // The rules
         System.out.println("Welcome in Guess The Number!");
-        System.out.println("The rules are simple : give me a number between 0 and 100, and i'll tell you if this" +
-                "\n is the right number." +
+        System.out.println("The rules are simple : give me a number between 0 and 100, and i tell you if this is the right number." +
                 "\n If it is not, you try again." +
                 "\n It it is, you won!");
-        System.out.println("Your time to play! Give me a number between 0 and 100.");
+        System.out.println("Your time to play!");
 
         // Random generation of a number between 0 and 100
         Random rand = new Random();
@@ -19,27 +18,38 @@ public class Main {
 
         // Variable which indicates if the number has been found
         boolean numberIsFind = false;
+        int nbrEssais = 5;
+        int number;
 
         // The game, continue until the number is found
-        while(!numberIsFind) {
+        while(!numberIsFind && nbrEssais > 0) {
 
             // User input
-            Scanner scanner = new Scanner(System.in);
-            int number = scanner.nextInt();
-            if(number >= 0 && number <= 100) {
-                if(number == solutionNumber) {
-                    numberIsFind = true;
-                } else {
-                    System.out.println("Wrong number! Try again.");
-                }
+            do {
+                System.out.println("Please enter a number between 0 and 100 : ");
+                Scanner scanner = new Scanner(System.in);
+                number = scanner.nextInt();
+            } while(number < 0 || number > 100);
+
+            if(number == solutionNumber) {
+                numberIsFind = true;
             } else {
-                System.out.println("Please enter a number between 0 and 100.");
+                nbrEssais--;
+
+                if(number > solutionNumber) { System.out.println("The number is greater than the solution number"); }
+                if(number < solutionNumber) { System.out.println("The number is less than the solution number"); }
+
+                System.out.println("Try again.");
+                System.out.println(nbrEssais + " attempts left.");
             }
+
         }
 
         // Message of victory or loss
         if(numberIsFind) {
-            System.out.println("The number is found!");
+            System.out.println("The number is found! You won! GG!");
+        } else {
+            System.out.println("The number is not found! You lose!");
         }
     }
 }
