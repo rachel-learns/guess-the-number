@@ -41,20 +41,24 @@ The program controls :
 - **Language** : Java.
 - **IDE** : IntelliJ IDEA.
 - **Tests** : JUnit 6.
+- **Tools** : Maven, Git.
 
 ---
 
 ## 🚀 Execution
 
+1. Clone the repository : `git clone [lien-depot]`
+2. Open the project with IntelliJ IDEA.
+3. Compile and execute the main class (Main.java).
 
 ---
 
-## 🎮 Example
+## 🎮 Example/Demo
 
-> Computer : Guess a number between 0 and 100.
-> User : 50.
-> Computer : It is smaller! You have 4 attempts left.
-> User : 33.
+> Computer : Guess a number between 0 and 100.  
+> User : 50.  
+> Computer : It is smaller! You have 4 attempts left.  
+> User : 33.  
 > Computer : You won! Your score is 3. Do you want to continue? (y/n)
 
 ---
@@ -67,27 +71,46 @@ The program controls :
 GuessTheNumber/
 |---src/
 |   |---main/
-|   |   |---java/org/example/
-|   |       |---Main.java
-|   |       |---OneGame.java
+|   |   |---java/
+|   |       |---org/example/
+|   |           |---Main.java
+|   |           |---OneGame.java
 |   |---test/
-|       |---java/org/example/
-|           |---OneGameTest.java
+|       |---java/
+|           |---org/example/
+|             |---OneGameTest.java
 |---pom.xml
 |---README.md
 ```
 ### 🔗 Clickable links
 
-- src/
-  - main/
-    - java/
-      - org/example/
-        - [Main.java](src/main/java/org/example/Main.java)
-        - [OneGame.java](src/main/java/org/example/OneGame.java)
-  - test/
-    - java/
-      - org/example/
-        - [OneGameTest.java](src/test/java/org/example/OneGameTest.java)
-- [pom.xml](pom.xml)
-- [README.md](README.md)
+- [Main.java](src/main/java/org/example/Main.java) : entry point.
+- [OneGame.java](src/main/java/org/example/OneGame.java) : source code of the game.
+- [OneGameTest.java](src/test/java/org/example/OneGameTest.java) : the test file.
+- [pom.xml](pom.xml) : configuration file.
+- [README.md](README.md) : the file you're currently reading, 
+which contains the explanations.
 
+---
+
+## 🧪 Tests
+The tests cover :
+- The random number generation (`generateRandomNumberTest`).
+- The comparison logic (`compareNumbersTest`).
+- The calculation of the score (`scoreOneGameTest`).
+
+---
+
+## 📚 Demonstrated skills/Learning
+
+
+---
+
+## 💡 Suggestions for improvement
+
+- Add a hard mode.
+- Save the best scores in a file.
+- Implement a graphic interface.
+- Add more hints.
+- Let the player choose the number of attempts or the interval for the generation 
+of the solution number.
