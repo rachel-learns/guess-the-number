@@ -3,21 +3,43 @@ package org.example;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * A class to create a game when needed.
+ */
 public class OneGame {
     private int score;
 
+    /**
+     * The class constructor.
+     */
     public OneGame() {
         score = 0;
     }
 
+
+    /**
+     * To get the value of the score property.
+     *
+     * @return The value of the score property.
+     */
     public int getScore() {
         return score;
     }
 
+
+    /**
+     * To change the score property.
+     *
+     * @param score The new score to replace the score property with.
+     */
     public void setScore(int score) {
         this.score = score;
     }
 
+
+    /**
+     * Allow the user to start and play the game.
+     */
     public void start() {
         // Random generation of a number between 0 and 100
         int solutionNumber = generateRandomNumber(0, 100);
@@ -66,12 +88,24 @@ public class OneGame {
     }
 
 
+    /**
+     * Generate a random number between a minimum bound and a maximum bound.
+     *
+     * @param min The minimum bound.
+     * @param max The maximum bound.
+     * @return The generated number.
+     */
     public int generateRandomNumber(int min, int max) {
         Random random = new Random();
         return random.nextInt(min, max);
     }
 
 
+    /**
+     * Allow the user to enter a number.
+     *
+     * @return The number entered by the user.
+     */
     public int userInput() {
         int number;
         do {
@@ -84,6 +118,13 @@ public class OneGame {
     }
 
 
+    /**
+     * Compare the numbers passed as parameters.
+     *
+     * @param number The number to compare.
+     * @param solutionNumber The number to compare to.
+     * @return A number indicating if number is equal, smaller or bigger than solutionNumber.
+     */
     public int compareNumbers(int number, int solutionNumber) {
         if(number == solutionNumber) {
             return 0;
@@ -97,6 +138,12 @@ public class OneGame {
     }
 
 
+    /**
+     * Return the score of a game based of the number of attempts left.
+     *
+     * @param nbrEssais The number of attempts left.
+     * @return The score of a game.
+     */
     public int scoreOneGame(int nbrEssais) {
         int score;
         if(nbrEssais == 4) {
