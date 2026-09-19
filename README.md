@@ -2,7 +2,7 @@
 
 This is a **mini-game** where we have to guess a number randomly chosen by the computer.
 
-## Description
+## 📝 Description 
 
 I have used **IntelliJ IDEA** to implement this game. It is played in **console mode**.  
 
@@ -13,7 +13,7 @@ The user does the number input, and the program will display a message indicatin
 bigger, smaller or if the user has won (guess the right number).
 
 **A few rules :**  
-- The user can play up to 10 games. He choses at each end of game if he wants to continue
+- The user can play up to 10 games. He chooses at each end of game if he wants to continue
 playing or not.  
 - The user has 5 attempts each game.
 - The score is the number of attempts left at the end of a game. 
