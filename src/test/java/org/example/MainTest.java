@@ -16,6 +16,7 @@ public class MainTest {
 
     @Test
     public void generateRandomNumberTest() {
+        // Check if the generated number is between 0 and 100
         int number = game.generateRandomNumber(0, 100);
         assertTrue(number >= 0 && number <= 100);
     }

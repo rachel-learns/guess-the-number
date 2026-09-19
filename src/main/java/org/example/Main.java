@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // Initializations of the variables
         boolean wantsToPlay = true;
         int gameMax = 10;
         int finalScore = 0;
 
         do {
-            // The rules
+            // The rules are displayed
             System.out.println("Welcome in Guess The Number!");
             System.out.println("The rules are simple : give me a number between 0 and 100, " +
                     "and i tell you if this is the right number.");
@@ -19,10 +20,11 @@ public class Main {
             System.out.println("Your time to play!");
             System.out.println();
 
+            // Instantiation of a new game
             OneGame game = new OneGame();
             gameMax--;
 
-            // Start of the game
+            // We start and play the game
             game.start();
 
             // Keep track of the final score

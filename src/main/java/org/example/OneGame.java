@@ -23,12 +23,12 @@ public class OneGame {
         int solutionNumber = generateRandomNumber(0, 100);
         System.out.println(solutionNumber);
 
-        // Variables initializations
+        // Initializations of the variables
         boolean numberIsFind = false;
         int nbrEssais = 5;
         int number;
 
-        // The game continue until the number is found or until there is no attempts left
+        // The game continues until the number is found or until there is no attempts left
         while (!numberIsFind && nbrEssais > 0) {
             // The user enters a number
             number = userInput();
@@ -37,7 +37,7 @@ public class OneGame {
             // The program compares the user's test with the solution
             int hint = compareNumbers(number, solutionNumber);
 
-            // We display a hint to help the user find the solution number
+            // We display an indication to help the user find the solution number
             if (hint == 0) {
                 numberIsFind = true;
             } else {
@@ -98,7 +98,6 @@ public class OneGame {
 
 
     public int scoreOneGame(int nbrEssais) {
-        // Return the score of this game
         int score;
         if(nbrEssais == 4) {
             score = 10;
