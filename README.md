@@ -18,7 +18,7 @@ At each attempt, the program indicates if the entered number is :
 - **Smaller** than the `solutionNumber`,
 - **Correct** (print a victory message).
 
-### 📜 The rules
+### 📜 Rules
 - **Number of rounds** : the user can play up to **10 rounds**. 
 He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playing.
 - **Attempts in a round** : **5 attempts** maximum each game.
@@ -29,11 +29,16 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
   the score is 3.)*
   - The **final score** is the addition of the scores of all the rounds played.
 
-### ✅ Inputs validation
+### 📌 Features
 
-The program controls :
-- The input number is between 0 and 100.
-- The answer to continue is valid (the only accepted characters are `y` and `n`).  
+| Feature               | Description                                   |
+|-----------------------|-----------------------------------------------|
+| **Random generation** | Number between 0 and 100.                     |
+| **Inputs validation** | Verification of numbers and choices (y/n).    |
+| **Limited attempts**  | 5 attempts per round.                         |
+| **Multi-rounds**      | Up to 10 rounds, with the choice to continue. |
+| **Score system**      | Based on the left attempts.                   |
+ 
 
 ---
 
@@ -47,13 +52,38 @@ The program controls :
 
 ## 🚀 Execution
 
+### 🙅‍♀️ For non-developers
+
+#### Replit
+
+- Click on the following link to test the code : [link]
+
+### 💻 For developers
+
+#### Prerequisites
+
+- Java 8 or + ([link download]).
+- A terminal or an IDE (IntelliJ, VS Code, Eclipse).
+
+#### With a terminal
+
+- With Maven :
+  1. Clone the repository : `git clone [lien-depot]`
+  2. Execute the command : `mvn compile exec:java -Dexec.mainClass="Main"`  
+  
+
+- Without Maven :
+  1. Download the file GuessTheNumber in the Release section.
+  2. Execute the command : `java -jar GuessTheNumber.jar`
+
+#### With an IDE
 1. Clone the repository : `git clone [lien-depot]`
 2. Open the project with IntelliJ IDEA.
 3. Compile and execute the main class (Main.java).
 
 ---
 
-## 🎮 Example/Demo
+## 🎮 Example/Demo (screenshots)
 
 > Computer : Guess a number between 0 and 100.  
 > User : 50.  
@@ -101,16 +131,14 @@ The tests cover :
 
 ---
 
-## 📚 Demonstrated skills/Learning
+## 📚 Demonstrated skills
+
+| Skill                           | Explanation                           |
+|---------------------------------|---------------------------------------|
+| **Algorithm logic**             | Game conception with clear rules.     |
+| **Manipulation of user inputs** | Checking that the inputs are valid.   |
+| **Java programming**            | Use of loops, conditions and methods. |
+| **Unit tests**                  | Code verification with JUnit.         |
+| **Documentation**               | Clear explanations for all audiences. |
 
 
----
-
-## 💡 Suggestions for improvement
-
-- Add a hard mode.
-- Save the best scores in a file.
-- Implement a graphic interface.
-- Add more hints.
-- Let the player choose the number of attempts or the interval for the generation 
-of the solution number.
