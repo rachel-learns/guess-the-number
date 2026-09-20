@@ -14,7 +14,7 @@ public class Main {
             // The rules are displayed
             System.out.println("Welcome in Guess The Number!");
             System.out.println("The rules are simple : give me a number between 0 and 100, " +
-                    "and i tell you if this is the right number.");
+                    "and I tell you if this is the right number.");
             System.out.println("If it is not, you try again.");
             System.out.println("It it is, you won!");
             System.out.println("Your time to play!");

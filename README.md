@@ -27,7 +27,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
   - Number of attempts left at the end of a round.  
   *(Example : if the user find in 2 attempts,
   the score is 3.)*
-  - The **final score** is the addition of the scores of all the rounds played.
+  - The **final score** is the addition of the scores of all the played rounds.
 
 ### 📌 Features
 
@@ -78,7 +78,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 #### With an IDE
 1. Clone the repository : `git clone [lien-depot]`
-2. Open the project with IntelliJ IDEA.
+2. Open the project with your IDE.
 3. Compile and execute the main class (Main.java).
 
 ---
@@ -133,12 +133,10 @@ The tests cover :
 
 ## 📚 Demonstrated skills
 
-| Skill                           | Explanation                           |
-|---------------------------------|---------------------------------------|
-| **Algorithm logic**             | Game conception with clear rules.     |
-| **Manipulation of user inputs** | Checking that the inputs are valid.   |
-| **Java programming**            | Use of loops, conditions and methods. |
-| **Unit tests**                  | Code verification with JUnit.         |
-| **Documentation**               | Clear explanations for all audiences. |
-
-
+| Skill                         | Explanation                           |
+|-------------------------------|---------------------------------------|
+| **Algorithm logic**           | Game conception with clear rules.     |
+| **Management of user inputs** | Checking that the inputs are valid.   |
+| **Java programming**          | Use of loops, conditions and methods. |
+| **Unit tests**                | Code verification with JUnit.         |
+| **Documentation**             | Clear explanations for all audiences. |

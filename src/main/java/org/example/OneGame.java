@@ -64,9 +64,9 @@ public class OneGame {
                 numberIsFind = true;
             } else {
                 if (hint == -1) {
-                    System.out.println("The solution number is bigger than the number.");
+                    System.out.println("Your number is smaller than the solution.");
                 } else {
-                    System.out.println("The solution number is smaller than the number.");
+                    System.out.println("Your number is bigger than the solution.");
                 }
 
                 System.out.println("Try again. You have " + nbrEssais + " attempts left.");
@@ -139,9 +139,9 @@ public class OneGame {
 
 
     /**
-     * Return the score of a game based of the number of attempts left.
+     * Return the score of a game based on the number of left attempts.
      *
-     * @param nbrEssais The number of attempts left.
+     * @param nbrEssais The number of left attempts.
      * @return The score of a game.
      */
     public int scoreOneGame(int nbrEssais) {
