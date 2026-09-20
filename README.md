@@ -68,16 +68,16 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 #### With a terminal
 
 - With Maven :
-  1. Clone the repository : `git clone lien-depot`
+  1. Clone the repository : `git clone https://github.com/rachel-learns/guess-the-number.git`
   2. Execute the command : `mvn compile exec:java -Dexec.mainClass="Main"`  
   
 
 - Without Maven :
-  1. Download the file GuessTheNumber in the Release section.
-  2. Execute the command : `java -jar GuessTheNumber.jar`
+  1. Download the `.jar` file in the Release section.
+  2. Execute the command : `java -jar GuessTheNumber-1.0-SNAPSHOT.jar`
 
 #### With an IDE
-1. Clone the repository : `git clone lien-depot`
+1. Clone the repository : `git clone https://github.com/rachel-learns/guess-the-number.git`
 2. Open the project with your IDE.
 3. Compile and execute the main class (Main.java).
 
