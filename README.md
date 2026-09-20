@@ -71,6 +71,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
   1. Clone the repository : `git clone https://github.com/rachel-learns/guess-the-number.git`
   2. Execute the command : `mvn compile exec:java`  
+  3. To execute the tests : `mvn test` (optional)
 
 
 - Without Maven :
