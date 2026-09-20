@@ -56,19 +56,19 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 #### Replit
 
-- Click on the following link to test the code : [link]
+- Click on the following link to test the code :
 
 ### 💻 For developers
 
 #### Prerequisites
 
-- Java 8 or + ([link download]).
+- Java 8 or +.
 - A terminal or an IDE (IntelliJ, VS Code, Eclipse).
 
 #### With a terminal
 
 - With Maven :
-  1. Clone the repository : `git clone [lien-depot]`
+  1. Clone the repository : `git clone lien-depot`
   2. Execute the command : `mvn compile exec:java -Dexec.mainClass="Main"`  
   
 
@@ -77,7 +77,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
   2. Execute the command : `java -jar GuessTheNumber.jar`
 
 #### With an IDE
-1. Clone the repository : `git clone [lien-depot]`
+1. Clone the repository : `git clone lien-depot`
 2. Open the project with your IDE.
 3. Compile and execute the main class (Main.java).
 
