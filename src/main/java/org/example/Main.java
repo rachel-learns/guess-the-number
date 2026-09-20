@@ -20,7 +20,9 @@ public class Main {
             System.out.println("Your time to play!");
             System.out.println();
 
-            // Instantiation of a new game
+            /**
+             * Creates a new OneGame class.
+             */
             OneGame game = new OneGame();
             gameMax--;
 
@@ -44,7 +46,9 @@ public class Main {
 
         } while(wantsToPlay && gameMax > 0);
 
-        // Print the final score and the number of played games
+        /**
+         * Prints the final score and the number of played games.
+         */
         gameMax = 10 - gameMax;
         System.out.println("Your final score is " + finalScore + " in " + gameMax + " games.");
     }

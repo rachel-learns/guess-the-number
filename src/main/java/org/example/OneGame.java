@@ -4,13 +4,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * A class to create a game when needed.
+ * Creates the OneGame class.
  */
 public class OneGame {
+    /**
+     * Declares an integer variable to store the score.
+     */
     private int score;
 
     /**
-     * The class constructor.
+     * The OneGame() constructor takes in no variables.
      */
     public OneGame() {
         score = 0;
