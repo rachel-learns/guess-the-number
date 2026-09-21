@@ -46,7 +46,6 @@ public class OneGame {
     public void start() {
         // Random generation of a number between 0 and 100
         int solutionNumber = generateRandomNumber(0, 100);
-        System.out.println(solutionNumber);
 
         // Initializations of the variables
         boolean numberIsFind = false;
