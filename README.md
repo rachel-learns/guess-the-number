@@ -39,6 +39,21 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 | **Multi-rounds**      | Up to 10 rounds, with the choice to continue. |
 | **Score system**      | Based on the left attempts.                   |
  
+---
+
+## 🎮 Demo
+
+- **The user starts the game and enter his first attempt :**
+
+![userInput](assets/userInput.png)
+
+- **The user chooses to keep playing, so a new round starts :**
+
+![userKeepsPlaying](assets/userKeepsPlaying.png)
+
+- **The user chooses to stop playing, so the final score is displayed :**
+
+![userStopsPlaying](assets/userStopsPlaying.png)
 
 ---
 
@@ -78,22 +93,16 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 ---
 
-## 🎮 Example/Demo (screenshots)
-
-> Computer : Guess a number between 0 and 100.  
-> User : 50.  
-> Computer : It is smaller! You have 4 attempts left.  
-> User : 33.  
-> Computer : You won! Your score is 3. Do you want to continue? (y/n)
-
----
-
 ## 📁 Project structure
 
-### 🧩 Code format
+### 🧩 Structure
 
 ```
 GuessTheNumber/
+|---assets/
+|   |---userInput.png
+|   |---userKeepsPlaying.png
+|   |---userStopsPlaying.png
 |---src/
 |   |---main/
 |   |   |---java/
@@ -107,7 +116,7 @@ GuessTheNumber/
 |---pom.xml
 |---README.md
 ```
-### 🔗 Clickable links
+### 🔗 Links
 
 - [Main.java](src/main/java/org/example/Main.java) : entry point.
 - [OneGame.java](src/main/java/org/example/OneGame.java) : source code of the game.
@@ -135,3 +144,5 @@ The tests cover :
 | **Java programming**          | Use of loops, conditions and methods. |
 | **Unit tests**                | Code verification with JUnit.         |
 | **Documentation**             | Clear explanations for all audiences. |
+
+---
