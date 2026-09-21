@@ -1,5 +1,0 @@
-image: gitpod/workspace-java-21
-
-tasks:
-  - name: Compile the project
-    command: mvn compile

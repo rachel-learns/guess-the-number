@@ -52,20 +52,12 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 ## 🚀 Execution
 
-### 🙅‍♀️ For non-developers
+### Prerequisites
 
-#### Gitpod
-
-- Click on the following link to test the code :
-
-### 💻 For developers
-
-#### Prerequisites
-
-- Java 8 or +.
+- Java 19 minimum ([Download here](https://www.oracle.com/java/technologies/downloads/#java21)). 
 - A terminal or an IDE (IntelliJ, VS Code, Eclipse).
 
-#### With a terminal
+### With a terminal
 
 - With Maven :
 
@@ -78,7 +70,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
   1. Download the `.jar` file in the Release section.
   2. Execute the command : `java -jar GuessTheNumber-1.0-SNAPSHOT.jar`
 
-#### With an IDE
+### With an IDE
 
 1. Clone the repository : `git clone https://github.com/rachel-learns/guess-the-number.git`
 2. Open the project with your IDE.
