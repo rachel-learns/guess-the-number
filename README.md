@@ -54,7 +54,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 ### 🙅‍♀️ For non-developers
 
-#### Replit
+#### Gitpod
 
 - Click on the following link to test the code :
 
