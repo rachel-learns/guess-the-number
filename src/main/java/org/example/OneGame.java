@@ -19,7 +19,6 @@ public class OneGame {
         score = 0;
     }
 
-
     /**
      * To get the value of the score property.
      *
@@ -28,7 +27,6 @@ public class OneGame {
     public int getScore() {
         return score;
     }
-
 
     /**
      * To change the score property.
@@ -39,11 +37,19 @@ public class OneGame {
         this.score = score;
     }
 
-
     /**
      * Allow the user to start and play the game.
      */
     public void start() {
+        // The rules are displayed
+        System.out.println("Welcome in Guess The Number!");
+        System.out.println("The rules are simple : give me a number between 0 and 100, " +
+                "and I tell you if this is the right number.");
+        System.out.println("If it is not, you try again. (You have 5 attempts)");
+        System.out.println("It it is, you won! (You can play up to 10 games)");
+        System.out.println("Your time to play!");
+        System.out.println();
+
         // Random generation of a number between 0 and 100
         int solutionNumber = generateRandomNumber(0, 100);
 
@@ -71,7 +77,8 @@ public class OneGame {
                     System.out.println("Your number is bigger than the solution.");
                 }
 
-                System.out.println("Try again. You have " + nbrEssais + " attempts left.");
+                String message = String.format("You have %d attempt%s left.", nbrEssais, (nbrEssais > 1 ? "s" : ""));
+                System.out.println(message);
                 System.out.println();
             }
         }
@@ -80,7 +87,7 @@ public class OneGame {
         if (numberIsFind) {
             System.out.println("The number is found! You won! GG!");
         } else {
-            System.out.println("The number is not found! You lose! It was " + solutionNumber + ".");
+            System.out.println("The number is not found! You lose! The solution was " + solutionNumber + ".");
         }
 
         // We display the score of this game
@@ -88,7 +95,6 @@ public class OneGame {
         System.out.println("Your score is " + getScore() + " for this game.");
         System.out.println();
     }
-
 
     /**
      * Generate a random number between a minimum bound and a maximum bound.
@@ -101,7 +107,6 @@ public class OneGame {
         Random random = new Random();
         return random.nextInt(min, max);
     }
-
 
     /**
      * Allow the user to enter a number.
@@ -118,7 +123,6 @@ public class OneGame {
 
         return number;
     }
-
 
     /**
      * Compare the numbers passed as parameters.
@@ -138,7 +142,6 @@ public class OneGame {
 
         return 1;
     }
-
 
     /**
      * Return the score of a game based on the number of left attempts.
