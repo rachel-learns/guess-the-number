@@ -55,14 +55,14 @@ public class OneGame {
 
         // Initializations of the variables
         boolean numberIsFind = false;
-        int nbrEssais = 5;
+        int nbrLeftAttempts = 5;
         int number;
 
         // The game continues until the number is found or until there is no attempts left
-        while (!numberIsFind && nbrEssais > 0) {
+        while (!numberIsFind && nbrLeftAttempts > 0) {
             // The user enters a number
             number = userInput();
-            nbrEssais--;
+            nbrLeftAttempts--;
 
             // The program compares the user's test with the solution
             int hint = compareNumbers(number, solutionNumber);
@@ -77,7 +77,7 @@ public class OneGame {
                     System.out.println("Your number is bigger than the solution.");
                 }
 
-                String message = String.format("You have %d attempt%s left.", nbrEssais, (nbrEssais > 1 ? "s" : ""));
+                String message = String.format("You have %d attempt%s left.", nbrLeftAttempts, (nbrLeftAttempts > 1 ? "s" : ""));
                 System.out.println(message);
                 System.out.println();
             }
@@ -91,7 +91,7 @@ public class OneGame {
         }
 
         // We display the score of this game
-        setScore(scoreOneGame(nbrEssais));
+        setScore(scoreOneGame(nbrLeftAttempts, numberIsFind));
         System.out.println("Your score is " + getScore() + " for this game.");
         System.out.println();
     }
@@ -146,15 +146,21 @@ public class OneGame {
     /**
      * Return the score of a game based on the number of left attempts.
      *
-     * @param nbrEssais The number of left attempts.
+     * @param nbrLeftAttempts The number of left attempts.
      * @return The score of a game.
      */
-    public int scoreOneGame(int nbrEssais) {
+    public int scoreOneGame(int nbrLeftAttempts, boolean numberIsFind) {
         int score;
-        if(nbrEssais == 4) {
+
+        if(!numberIsFind) {
+            return 0;
+        }
+
+        int nbrAttempts = 5 - nbrLeftAttempts;
+        if(nbrAttempts == 1) {
             score = 10;
         } else {
-            score = nbrEssais;
+            score = 6 - nbrAttempts;
         }
 
         return score;

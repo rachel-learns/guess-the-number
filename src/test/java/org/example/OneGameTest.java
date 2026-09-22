@@ -30,10 +30,16 @@ public class OneGameTest {
 
     @Test
     public void scoreOneGameTest() {
-        int score = game.scoreOneGame(4);
+        int score = game.scoreOneGame(4, true);
         assertEquals(10, score);
 
-        int score1 = game.scoreOneGame(2);
-        assertEquals(2, score1);
+        int score1 = game.scoreOneGame(2, true);
+        assertEquals(3, score1);
+
+        int score2 = game.scoreOneGame(0, false);
+        assertEquals(0, score2);
+
+        int score3 = game.scoreOneGame(0, true);
+        assertEquals(1, score3);
     }
 }

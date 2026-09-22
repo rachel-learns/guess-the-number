@@ -23,10 +23,10 @@ At each attempt, the program indicates if the entered number is :
 He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playing.
 - **Attempts in a round** : **5 attempts** maximum each game.
 - **Score system** :
-  - If the user find at the **first attempt**, the score of this game is 10.
-  - Number of attempts left at the end of a round.  
-  *(Example : if the user find in 2 attempts,
-  the score is 3.)*
+  - If the user finds at the **first attempt**, the score of this game is 10.
+  - The score starts at 4 and decreases by 1 at each attempt performed.  
+  *(Examples : if the user finds in 2 attempts,
+  the score is 4 ; if he finds in 3 attempts, the score is 3, ...)*
   - The **final score** is the addition of the scores of all the played rounds.
 
 ### 📌 Features
@@ -37,7 +37,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 | **Inputs validation** | Verification of numbers and choices (y/n).    |
 | **Limited attempts**  | 5 attempts per round.                         |
 | **Multi-rounds**      | Up to 10 rounds, with the choice to continue. |
-| **Score system**      | Based on the left attempts.                   |
+| **Score system**      | Based on the number of attempts.              |
  
 ---
 
