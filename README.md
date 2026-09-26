@@ -69,7 +69,7 @@ He chooses at each end of game if he wants to continue (`y`) or stop (`n`) playi
 
 ### Prerequisites
 
-- Java 19 minimum ([Download here](https://www.oracle.com/java/technologies/downloads/#java21)). 
+- Java 23 minimum ([Download here](https://www.oracle.com/java/technologies/downloads/#java27)). 
 - A terminal or an IDE (IntelliJ, VS Code, Eclipse).
 
 ### With a terminal
